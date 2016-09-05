@@ -27,7 +27,11 @@ class ReporterToggler (PalettePlugin):
 			self.paletteView = Window((width, height + 10))
 			self.paletteView.group = Group((0, 0, width, height + 10))
 			# self.paletteView.group.text = TextBox((10, 0, -10, -10), self.name, sizeStyle='small')
-			for i, reporter in enumerate(Glyphs.reporters): # Glyphs.activeReporters
+			reporterArray = [u"%s" % r.title() for r in Glyphs.reporters]
+			reporterArraySorted = sorted(reporterArray)
+
+
+			for i, reporter in enumerate(reporterArraySorted): # Glyphs.activeReporters
 				if reporter in Glyphs.activeReporters:
 					isActive = True
 				else:
