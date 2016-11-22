@@ -15,6 +15,9 @@ from GlyphsApp.plugins import *
 from vanilla import *
 import traceback
 
+def ReporterSort(obj1, obj2):
+	return cmp(obj1.title(), obj2.title())
+
 class ReporterToggler (PalettePlugin):
 
 	def settings(self):
@@ -27,12 +30,10 @@ class ReporterToggler (PalettePlugin):
 			self.paletteView = Window((width, height + 10))
 			self.paletteView.group = Group((0, 0, width, height + 10))
 			# self.paletteView.group.text = TextBox((10, 0, -10, -10), self.name, sizeStyle='small')
-			reporterArray = [u"%s" % r.title() for r in Glyphs.reporters]
-			# reporterArraySorted = sorted(reporterArray)
+			self.reporterArray = list(Glyphs.reporters)
+			self.reporterArray = sorted(self.reporterArray, ReporterSort)
 
-
-			# for i, reporter in enumerate(reporterArraySorted): # Glyphs.activeReporters
-			for i, reporter in enumerate(reporterArray): # Glyphs.activeReporters
+			for i, reporter in enumerate(self.reporterArray): # Glyphs.activeReporters
 				if reporter in Glyphs.activeReporters:
 					isActive = True
 				else:
@@ -54,13 +55,11 @@ class ReporterToggler (PalettePlugin):
 	def toggle(self, sender):
 		try:
 			thisReporter = sender.getTitle()
-			for rep in Glyphs.reporters:
+			for i, rep in enumerate(self.reporterArray):
 				if rep.title() == thisReporter:
 					if sender.get() == 0:
-						print "off", thisReporter, rep.title()
 						Glyphs.deactivateReporter(rep)
 					if sender.get() == 1:
-						print "on", thisReporter
 						Glyphs.activateReporter(rep)
 		except:
 			print traceback.format_exc()
@@ -68,7 +67,7 @@ class ReporterToggler (PalettePlugin):
 
 	def update( self, sender ):
 		try:
-			for i, reporter in enumerate(Glyphs.reporters): # Glyphs.activeReporters
+			for i, reporter in enumerate(self.reporterArray): # Glyphs.activeReporters
 				if reporter in Glyphs.activeReporters:
 					isActive = True
 				else:
@@ -80,4 +79,5 @@ class ReporterToggler (PalettePlugin):
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
 		NSNotificationCenter.defaultCenter().removeObserver_(self)
+
 
