@@ -38,6 +38,7 @@ class ReporterToggler (PalettePlugin):
 					isActive = True
 				else:
 					isActive = False
+				# print reporter.classCode()
 				attrName = "CheckBox_%s" % str(i)
 				checkBox = CheckBox( (10, elementHeight*i, -10, elementHeight), reporter.title(), sizeStyle='small', value=isActive, callback=self.toggle )
 				setattr(self.paletteView.group, attrName, checkBox)
@@ -79,5 +80,4 @@ class ReporterToggler (PalettePlugin):
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
 		NSNotificationCenter.defaultCenter().removeObserver_(self)
-
 
