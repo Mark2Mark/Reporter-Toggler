@@ -81,6 +81,8 @@ class MFCheckBox(CheckBox):
 
 	def __init__(self, posSize, title, callback=None, value=False, sizeStyle="regular"):
 
+		# super(MFCheckBox, self).__init__(posSize, title, callback=None, value=False, sizeStyle=chosenSize)
+
 		self._setupView("NSView", posSize)
 
 		self._callback = callback
@@ -132,6 +134,45 @@ class MFCheckBox(CheckBox):
 ########################################
 ########################################
 ########################################		
+
+
+
+
+
+
+'''
+# Under Construction, not working.
+# Attempt to reduce code above.
+
+class _CheckBoxManualBuild(VanillaBaseObject):
+	textBoxPosSize = {
+			# left, top, height
+			## ************************
+			"mini": (12, 5, 12), # Changed by Mark, original: (10, 4, 12)
+			"small": (14, 6, 14), # Changed by Mark, original: (14, 4, 14)
+			## ************************
+			"regular": (16, 3, 17)
+			}
+	def __init__(self, posSize, title, callback=None, value=False, sizeStyle="regular"):
+		super(_CheckBoxManualBuild, self).__init__()
+		print "Class B"
+		print self.textBoxPosSize
+
+class M2FCheckBox(_CheckBoxManualBuild):
+	def __init__(self, posSize, title, callback=None, value=False, sizeStyle="regular"):
+		super(M2FCheckBox, self).__init__(posSize, title, callback=None, value=False, sizeStyle="regular")
+		print "Class C"
+		print self.textBoxPosSize
+
+
+'''
+
+
+
+
+
+
+
 
 
 elmtSizes = {  # 14 for mini, 16 for small # in older versions we had small/15; but larger leading is easier to read
