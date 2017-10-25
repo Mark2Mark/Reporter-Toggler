@@ -1,4 +1,4 @@
-# Reporter Toggle
+# Reporter Toggler
 
 *This is a plugin for the [Glyphs font editor](http://glyphsapp.com/).*  
 
@@ -6,7 +6,10 @@ It adds a menu to the Palette, which gives you instant access to all your report
 
 ### Examples
 
-![Reporter Toggler](https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Screenshots/ReporterToggler%2002.png "Reporter Toggler")
+<p align="center">
+<img src="https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Screenshots/ReporterToggler%2002.png" alt="Reporter Toggler" height="600px">
+</p>
+
 
 ##### Pull Requests
 
