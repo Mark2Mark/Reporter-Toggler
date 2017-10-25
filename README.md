@@ -6,7 +6,7 @@ It adds a menu to the Palette, which gives you instant access to all your report
 
 ### Examples
 
-![Reporter Toggler](https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Screenshots/ReporterToggler%2001.png "Reporter Toggler")
+![Reporter Toggler](https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Screenshots/ReporterToggler%2002.png "Reporter Toggler")
 
 ##### Pull Requests
 
