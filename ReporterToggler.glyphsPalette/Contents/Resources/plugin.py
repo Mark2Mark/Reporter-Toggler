@@ -38,35 +38,58 @@ def ReporterSort(obj1, obj2):
 
 class _CheckBoxManualBuildButton(Button):
 
-    nsButtonType = NSSwitchButton
-    frameAdjustments = {
-        "regular": (-2, -3, 4, 4),
-        "small": (-3, -7, 5, 4),
-        "mini": (-3, -11, 6, 8),
-        }
+	nsButtonType = NSSwitchButton
+	frameAdjustments = {
+		"regular": (-2, -3, 4, 4),
+		"small": (-3, -7, 5, 4),
+		"mini": (-3, -11, 6, 8),
+		}
 
-    def set(self, value):
-        self._nsObject.setState_(value)
+	def set(self, value):
+		self._nsObject.setState_(value)
 
-    def get(self):
-        return self._nsObject.state()
+	def get(self):
+		return self._nsObject.state()
 
-    def toggle(self):
-        state = self.get()
-        self.set(not state)
+	def toggle(self):
+		state = self.get()
+		self.set(not state)
+
+	def _buttonHit(self, sender):
+		pass
+		'''
+		# if the text box is the sender,
+		# flip the state of the check box
+		if sender == self._textButton:
+			self._checkBox.toggle()
+		if self._callback is not None:
+			self._callback(self)
+		'''
+
 
 
 class _CheckBoxManualBuildTextButton(Button):
 
-    nsBezelStyle = NSShadowlessSquareBezelStyle
-    frameAdjustments = None
+	nsBezelStyle = NSShadowlessSquareBezelStyle
+	frameAdjustments = None
 
-    def __init__(self, posSize, title, callback, sizeStyle):
-        super(_CheckBoxManualBuildTextButton, self).__init__(posSize, title=title, callback=callback)
-        self._nsObject.setBordered_(False)
-        self._setSizeStyle(sizeStyle)
-        self._nsObject.setAlignment_(NSLeftTextAlignment)
-        self._nsObject.cell().setHighlightsBy_(NSNoCellMask)
+	def __init__(self, posSize, title, callback, sizeStyle):
+		super(_CheckBoxManualBuildTextButton, self).__init__(posSize, title=title, callback=callback)
+		self._nsObject.setBordered_(False)
+		self._setSizeStyle(sizeStyle)
+		self._nsObject.setAlignment_(NSLeftTextAlignment)
+		self._nsObject.cell().setHighlightsBy_(NSNoCellMask)
+
+	def _buttonHit(self, sender):
+		pass
+		'''
+		# if the text box is the sender,
+		# flip the state of the check box
+		if sender == self._textButton:
+			self._checkBox.toggle()
+		if self._callback is not None:
+			self._callback(self)
+		'''
 
 ########################################
 
