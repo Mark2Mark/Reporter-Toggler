@@ -203,7 +203,10 @@ class ReporterToggler (PalettePlugin):
 					isActive = False
 				# print reporter.classCode()
 				attrName = "CheckBox_%s" % str(i)
-				checkBox = MFCheckBox( (10, elementHeight*i, -10, elementHeight), reporter.title(), sizeStyle=chosenSize, value=isActive, callback=self.toggle )
+				try:
+					checkBox = MFCheckBox( (10, elementHeight*i, -10, elementHeight), reporter.title(), sizeStyle=chosenSize, value=isActive, callback=self.toggle )
+				except:
+					checkBox = CheckBox( (10, elementHeight*i, -10, elementHeight), reporter.title(), sizeStyle=chosenSize, value=isActive, callback=self.toggle )
 				setattr(self.paletteView.group, attrName, checkBox)
 
 			# Set dialog to NSView
