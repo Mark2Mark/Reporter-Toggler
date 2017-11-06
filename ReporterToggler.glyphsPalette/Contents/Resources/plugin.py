@@ -15,6 +15,8 @@ from GlyphsApp.plugins import *
 from vanilla import *
 import traceback
 
+# print "Reporter Toggler 2017-11-06"
+
 
 def ReporterSort(obj1, obj2):
 	return cmp(obj1.title(), obj2.title())
@@ -38,58 +40,35 @@ def ReporterSort(obj1, obj2):
 
 class _CheckBoxManualBuildButton(Button):
 
-	nsButtonType = NSSwitchButton
-	frameAdjustments = {
-		"regular": (-2, -3, 4, 4),
-		"small": (-3, -7, 5, 4),
-		"mini": (-3, -11, 6, 8),
-		}
+    nsButtonType = NSSwitchButton
+    frameAdjustments = {
+        "regular": (-2, -3, 4, 4),
+        "small": (-3, -7, 5, 4),
+        "mini": (-3, -11, 6, 8),
+        }
 
-	def set(self, value):
-		self._nsObject.setState_(value)
+    def set(self, value):
+        self._nsObject.setState_(value)
 
-	def get(self):
-		return self._nsObject.state()
+    def get(self):
+        return self._nsObject.state()
 
-	def toggle(self):
-		state = self.get()
-		self.set(not state)
-
-	def _buttonHit(self, sender):
-		pass
-		'''
-		# if the text box is the sender,
-		# flip the state of the check box
-		if sender == self._textButton:
-			self._checkBox.toggle()
-		if self._callback is not None:
-			self._callback(self)
-		'''
-
+    def toggle(self):
+        state = self.get()
+        self.set(not state)
 
 
 class _CheckBoxManualBuildTextButton(Button):
 
-	nsBezelStyle = NSShadowlessSquareBezelStyle
-	frameAdjustments = None
+    nsBezelStyle = NSShadowlessSquareBezelStyle
+    frameAdjustments = None
 
-	def __init__(self, posSize, title, callback, sizeStyle):
-		super(_CheckBoxManualBuildTextButton, self).__init__(posSize, title=title, callback=callback)
-		self._nsObject.setBordered_(False)
-		self._setSizeStyle(sizeStyle)
-		self._nsObject.setAlignment_(NSLeftTextAlignment)
-		self._nsObject.cell().setHighlightsBy_(NSNoCellMask)
-
-	def _buttonHit(self, sender):
-		pass
-		'''
-		# if the text box is the sender,
-		# flip the state of the check box
-		if sender == self._textButton:
-			self._checkBox.toggle()
-		if self._callback is not None:
-			self._callback(self)
-		'''
+    def __init__(self, posSize, title, callback, sizeStyle):
+        super(_CheckBoxManualBuildTextButton, self).__init__(posSize, title=title, callback=callback)
+        self._nsObject.setBordered_(False)
+        self._setSizeStyle(sizeStyle)
+        self._nsObject.setAlignment_(NSLeftTextAlignment)
+        self._nsObject.cell().setHighlightsBy_(NSNoCellMask)
 
 ########################################
 
@@ -166,7 +145,6 @@ class MFCheckBox(CheckBox):
 '''
 # Under Construction, not working.
 # Attempt to reduce code above.
-
 class _CheckBoxManualBuild(VanillaBaseObject):
 	textBoxPosSize = {
 			# left, top, height
@@ -180,14 +158,11 @@ class _CheckBoxManualBuild(VanillaBaseObject):
 		super(_CheckBoxManualBuild, self).__init__()
 		print "Class B"
 		print self.textBoxPosSize
-
 class M2FCheckBox(_CheckBoxManualBuild):
 	def __init__(self, posSize, title, callback=None, value=False, sizeStyle="regular"):
 		super(M2FCheckBox, self).__init__(posSize, title, callback=None, value=False, sizeStyle="regular")
 		print "Class C"
 		print self.textBoxPosSize
-
-
 '''
 
 
@@ -270,4 +245,3 @@ class ReporterToggler (PalettePlugin):
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
 		NSNotificationCenter.defaultCenter().removeObserver_(self)
-
