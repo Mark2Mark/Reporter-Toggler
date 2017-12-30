@@ -216,10 +216,11 @@ class ReporterToggler (PalettePlugin):
 
 
 	def start(self):
-		# Adding a callback for the 'GSUpdateInterface' event
-		s = objc.selector( self.update, signature="v@:" )
-		NSNotificationCenter.defaultCenter().addObserver_selector_name_object_( self, s, "GSUpdateInterface", None )  # GSDocumentCloseNotification | GSDocumentActivateNotification
-
+		# Adding a callback for when the visiblity of a reporter changes
+		NSUserDefaults.standardUserDefaults().addObserver_forKeyPath_options_context_(self, "visibleReporters", 0, None)
+		
+	def observeValueForKeyPath_ofObject_change_context_(self, keyPath, aObject, change, context):
+		self.update(self)
 
 	def toggle(self, sender):
 		try:
@@ -247,4 +248,4 @@ class ReporterToggler (PalettePlugin):
 
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
-		NSNotificationCenter.defaultCenter().removeObserver_(self)
+		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
