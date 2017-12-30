@@ -11,8 +11,10 @@
 #
 ###########################################################################################################
 
+import objc
 from GlyphsApp.plugins import *
 from vanilla import *
+from AppKit import NSSwitchButton, NSShadowlessSquareBezelStyle
 import traceback
 
 # print "Reporter Toggler 2017-11-06"
