@@ -14,11 +14,7 @@
 import objc
 from GlyphsApp.plugins import *
 from vanilla import *
-<<<<<<< HEAD
 from AppKit import NSNotificationCenter, NSSwitchButton, NSShadowlessSquareBezelStyle, NSLeftTextAlignment, NSNoCellMask
-=======
-from AppKit import NSSwitchButton, NSShadowlessSquareBezelStyle
->>>>>>> origin/master
 import traceback
 
 # print "Reporter Toggler 2017-11-06"
@@ -254,9 +250,7 @@ class ReporterToggler (PalettePlugin):
 
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
-<<<<<<< HEAD
-		NSNotificationCenter.defaultCenter().removeObserver_(self)
 
-=======
+		NSNotificationCenter.defaultCenter().removeObserver_(self)
 		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
->>>>>>> origin/master
+
