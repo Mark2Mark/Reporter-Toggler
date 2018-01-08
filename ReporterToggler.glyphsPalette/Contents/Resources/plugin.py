@@ -13,6 +13,7 @@
 
 from GlyphsApp.plugins import *
 from vanilla import *
+from AppKit import NSNotificationCenter, NSSwitchButton, NSShadowlessSquareBezelStyle, NSLeftTextAlignment, NSNoCellMask
 import traceback
 
 # print "Reporter Toggler 2017-11-06"
@@ -248,3 +249,4 @@ class ReporterToggler (PalettePlugin):
 	def quit(self):
 		# Delete callbacks when Glyphs quits, otherwise it'll crash :( 
 		NSNotificationCenter.defaultCenter().removeObserver_(self)
+
