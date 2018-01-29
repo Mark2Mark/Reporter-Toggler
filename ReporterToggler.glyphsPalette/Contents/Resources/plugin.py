@@ -30,13 +30,19 @@ elmtSizes = {  # 14 for mini, 16 for small # in older versions we had small/15; 
 }
 chosenSize = 'mini'
 
+'''
+CheckBox.frameAdjustments = {
+	"mini": (0, -4, 0, 8),
+	"small": (0, -2, 0, 4),
+	"regular": (0, -2, 0, 4),
+}
 
-# CheckBox.frameAdjustments = {
-# 		"mini": (0, -4, 0, 8),
-# 		"small": (0, -2, 0, 4),
-# 		"regular": (0, -2, 0, 4),
-# 		}
-
+CheckBox.buttonSizes = {
+	"mini": (10, 10),
+	"small": (18, 18),
+	"regular": (22, 22)
+}
+'''
 
 class ReporterToggler (PalettePlugin):
 
