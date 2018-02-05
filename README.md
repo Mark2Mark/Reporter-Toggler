@@ -11,7 +11,7 @@ It adds a menu to the Palette, which gives you instant access to all your report
 ### Examples
 
 <p align="center">
-<img src="https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Screenshots/ReporterToggler%2002.png" alt="Reporter Toggler" height="600px">
+<img src="https://github.com/Mark2Mark/Reporter-Toggler/blob/master/Images/ReporterToggler%2002.png" alt="Reporter Toggler" height="600px">
 </p>
 
 
