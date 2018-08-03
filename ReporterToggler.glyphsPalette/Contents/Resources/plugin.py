@@ -102,7 +102,7 @@ class ReporterToggler (PalettePlugin):
 		except:
 			print traceback.format_exc()
 
-	def quit(self):
+	def __del__(self):
 		# Delete callbacks when the window is closed, otherwise it'll crash :( 
 		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
 
