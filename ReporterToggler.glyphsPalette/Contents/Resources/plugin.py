@@ -13,7 +13,7 @@
 
 import objc
 from GlyphsApp.plugins import *
-from AppKit import NSStackView, NSButton, NSBundle, NSOnState, NSOffState, NSMiniControlSize, NSSmallControlSize
+from AppKit import NSStackView, NSButton, NSBundle, NSOnState, NSOffState, NSMiniControlSize, NSSmallControlSize, NSSwitchButton
 import traceback
 NSStackViewGravityLeading = 1
 NSLayoutConstraintOrientationVertical = 1
@@ -44,7 +44,10 @@ class ReporterToggler (PalettePlugin):
 			for i, reporter in enumerate(self.reporterArray): # Glyphs.activeReporters
 				# print reporter.classCode()
 				
-				checkBox = NSButton.checkboxWithTitle_target_action_(reporter.title(), self, self.toggle)
+				frame = NSMakeRect(0, 0, 18, 18)
+				checkBox = NSButton.alloc().initWithFrame_(frame)
+				checkBox.setTitle_(reporter.title())
+				checkBox.setButtonType_(NSSwitchButton)
 				
 				if reporter in Glyphs.activeReporters:
 					isActive = NSOnState
