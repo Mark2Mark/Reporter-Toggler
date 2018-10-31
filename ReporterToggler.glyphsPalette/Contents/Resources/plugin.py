@@ -48,7 +48,8 @@ class ReporterToggler (PalettePlugin):
 				checkBox = NSButton.alloc().initWithFrame_(frame)
 				checkBox.setTitle_(reporter.title())
 				checkBox.setButtonType_(NSSwitchButton)
-				
+				checkBox.setTarget_(self)
+				checkBox.setAction_(self.toggle_)
 				if reporter in Glyphs.activeReporters:
 					isActive = NSOnState
 				else:
@@ -81,7 +82,7 @@ class ReporterToggler (PalettePlugin):
 		self.update(self)
 
 
-	def toggle(self, sender):
+	def toggle_(self, sender):
 		try:
 			thisReporter = sender.title()
 			for i, reporter in enumerate(self.reporterArray):
