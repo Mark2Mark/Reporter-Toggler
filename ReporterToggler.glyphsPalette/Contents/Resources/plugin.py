@@ -1,4 +1,5 @@
 # encoding: utf-8
+from __future__ import division, print_function, unicode_literals
 
 ###########################################################################################################
 #
@@ -18,17 +19,19 @@ import traceback
 NSStackViewGravityLeading = 1
 NSLayoutConstraintOrientationVertical = 1
 NSLayoutConstraintOrientationHorizontal = 0
-# print "Reporter Toggler 2018-01-29"
+# print("Reporter Toggler 2018-01-29")
 
-ControllSize = NSMiniControlSize # NSSmallControlSize
+ControlSize = NSMiniControlSize # NSSmallControlSize
 
-
+@objc.python_method
 def ReporterSort(obj1, obj2):
 	return cmp(obj1.title(), obj2.title())
 
 class ReporterToggler (PalettePlugin):
 	stackView = objc.IBOutlet()
 	view = objc.IBOutlet()
+	
+	@objc.python_method
 	def settings(self):
 		try:
 			#NSBundle.loadNibNamed_owner_('View', self)
@@ -36,13 +39,10 @@ class ReporterToggler (PalettePlugin):
 			
 			width = 160
 			self.reporterArray = list(Glyphs.reporters)
-			self.reporterArray = sorted(self.reporterArray, ReporterSort)
-			
-			
-			
+			self.reporterArray = sorted(self.reporterArray, key=lambda reporter: reporter.title())
 			self.checkboxes = []
 			for i, reporter in enumerate(self.reporterArray): # Glyphs.activeReporters
-				# print reporter.classCode()
+				# print(reporter.classCode())
 				
 				frame = NSMakeRect(0, 0, 18, 18)
 				checkBox = NSButton.alloc().initWithFrame_(frame)
@@ -55,8 +55,8 @@ class ReporterToggler (PalettePlugin):
 				else:
 					isActive = NSOffState
 				checkBox.setState_(isActive)
-				checkBox.setControlSize_(ControllSize)
-				font = NSFont.systemFontOfSize_(NSFont.systemFontSizeForControlSize_(ControllSize))
+				checkBox.setControlSize_(ControlSize)
+				font = NSFont.systemFontOfSize_(NSFont.systemFontSizeForControlSize_(ControlSize))
 				checkBox.setFont_(font)
 				self.checkboxes.append(checkBox)
 			self.dialog = NSStackView.stackViewWithViews_(self.checkboxes)
@@ -70,19 +70,17 @@ class ReporterToggler (PalettePlugin):
 			#self.dialog = self.view
 
 		except:
-			print traceback.format_exc()
+			print(traceback.format_exc())
 
-
+	@objc.python_method
 	def start(self):
 		# Adding a callback for when the visiblity of a reporter changes
 		NSUserDefaults.standardUserDefaults().addObserver_forKeyPath_options_context_(self, "visibleReporters", 0, None)
 
-
 	def observeValueForKeyPath_ofObject_change_context_(self, keyPath, aObject, change, context):
 		self.update(self)
 
-
-	def toggle_(self, sender):
+	def toggle_(self, sender=None):
 		try:
 			thisReporter = sender.title()
 			for i, reporter in enumerate(self.reporterArray):
@@ -92,10 +90,10 @@ class ReporterToggler (PalettePlugin):
 					else:
 						Glyphs.activateReporter(reporter)
 		except:
-			print traceback.format_exc()
+			print(traceback.format_exc())
 
-
-	def update(self, sender):
+	@objc.python_method
+	def update(self, sender=None):
 		try:
 			for i, reporter in enumerate(self.reporterArray): # Glyphs.activeReporters
 				if reporter in Glyphs.activeReporters:
@@ -104,14 +102,13 @@ class ReporterToggler (PalettePlugin):
 					isActive = NSOffState
 				self.checkboxes[i].setState_(isActive)
 		except:
-			print traceback.format_exc()
-
+			print(traceback.format_exc())
+	
+	@objc.python_method
 	def __del__(self):
 		# Delete callbacks when the window is closed, otherwise it'll crash :( 
 		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
 
-	def setSortID_(self, id):
-		pass
-	
+	@objc.python_method
 	def sortID(self):
 		return 0
