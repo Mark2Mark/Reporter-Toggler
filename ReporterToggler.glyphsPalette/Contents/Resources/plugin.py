@@ -105,3 +105,8 @@ class ReporterToggler (PalettePlugin):
 		# Delete callbacks when the window is closed, otherwise it'll crash :( 
 		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
 	
+	def setSortID_(self, id):
+		pass
+	
+	def sortID(self):
+		return 0
