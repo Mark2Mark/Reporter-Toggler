@@ -23,10 +23,6 @@ NSLayoutConstraintOrientationHorizontal = 0
 
 ControlSize = NSMiniControlSize # NSSmallControlSize
 
-@objc.python_method
-def ReporterSort(obj1, obj2):
-	return cmp(obj1.title(), obj2.title())
-
 class ReporterToggler (PalettePlugin):
 	stackView = objc.IBOutlet()
 	view = objc.IBOutlet()
@@ -108,7 +104,4 @@ class ReporterToggler (PalettePlugin):
 	def __del__(self):
 		# Delete callbacks when the window is closed, otherwise it'll crash :( 
 		NSUserDefaults.standardUserDefaults().removeObserver_forKeyPath_(self, "visibleReporters")
-
-	@objc.python_method
-	def sortID(self):
-		return 0
+	
