@@ -11,7 +11,7 @@ It adds a menu to the Palette, which gives you instant access to all your report
 ### Examples
 
 <p align="center">
-<img src="https://github.com/Mark2Mark/Reporter-Toggler/blob/Glyphs3/Images/Plugin%20Manager%20-%20Reporter%20Toggler.png" alt="Reporter Toggler" height="600px">
+<img src="https://github.com/Mark2Mark/Reporter-Toggler/blob/Glyphs3/Images/Plugin%20Manager%20-%20Reporter%20Toggler.png" alt="Reporter Toggler" height="230px">
 </p>
 
 
