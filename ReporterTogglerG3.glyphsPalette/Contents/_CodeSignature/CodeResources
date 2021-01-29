@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		jWZUemyHjM/4wBT3YT4tOywetl8=
+		7d4iXtzK3c7yjJKyn4jUNoeaTMs=
 		</data>
 		<key>Resources/MFHidableCheckbox.nib</key>
 		<data>
@@ -29,21 +29,13 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			jWZUemyHjM/4wBT3YT4tOywetl8=
-			</data>
 			<key>hash2</key>
 			<data>
-			Bk0EsoqQgg/7Shc4REBhqJ9JWMVG8rXsm9QtwBYZfkA=
+			OuT7OPYEptin4fy97HKOMKLcqY+lo4woZjvlq5dfzMM=
 			</data>
 		</dict>
 		<key>Resources/MFHidableCheckbox.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ByxSGs2VQN1+vXzSqpB+KCvPwHA=
-			</data>
 			<key>hash2</key>
 			<data>
 			2iPMH+INh+ncZ2YVALDi7v9YNCg6MyBEGIhBtRgOPSE=
@@ -51,10 +43,6 @@
 		</dict>
 		<key>Resources/ReporterTogglerG3-Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ZpShXd85WruyHQqAvnU3etxRWXQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			MoLBVGQVGJR4w4uY7/ZDrP/jWdYRB9AarshM+9oyPVg=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>Resources/ReporterTogglerG3-Prefix.pch</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -73,10 +57,6 @@
 		</dict>
 		<key>Resources/ReporterTogglerG3View.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9Njun4wzyPjjw/lLM4/55dVAXfQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			qW4tI8NCr7pUZCaM11QPbXLVqnX2WN4e2kjF22MUcsQ=
