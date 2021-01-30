@@ -23,7 +23,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3</string>
+	<string>1</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -42,7 +42,5 @@
 	<string>12B45b</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.11</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright, Mark Frömberg, 2016-now</string>
 </dict>
 </plist>
