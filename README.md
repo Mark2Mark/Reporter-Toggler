@@ -7,6 +7,7 @@
 *This is a plugin for the [Glyphs font editor](http://glyphsapp.com/).*  
 
 It adds a menu to the Palette, which gives you instant access to all your reporter plugins. Quick’n’easy on/off switching with just a single click.
+New Feature for Glyphs 3: You can now customize your favorite plugins to be filered with the Edit button. (January 2021) 
 
 ### Examples
 
@@ -15,9 +16,9 @@ It adds a menu to the Palette, which gives you instant access to all your report
 </p>
 
 
-##### Pull Requests
+##### Contributing
 
-Feel free to comment or pull requests for any improvements.
+Feel free to open issues for requests or improvement ideas.
 
 ##### License
 
