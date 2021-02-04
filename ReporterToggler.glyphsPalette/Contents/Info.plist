@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>20C69</string>
+	<string>20D64</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>ReporterTogglerG3</string>
+	<string>ReporterToggler</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.markfromberg.ReporterTogglerG3</string>
+	<string>com.markfromberg.ReporterToggler</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>ReporterTogglerG3</string>
+	<string>ReporterToggler</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
