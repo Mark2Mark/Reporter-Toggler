@@ -6,11 +6,15 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		6xK1BheA3Yi6+fokfk/1yDP9JAA=
+		6fFoV6ugmzDNTy9kCbj/Cpn4alw=
 		</data>
-		<key>Resources/MFHidableCheckbox.nib</key>
+		<key>Resources/MFHidableCheckbox.nib/keyedobjects-101300.nib</key>
 		<data>
-		ByxSGs2VQN1+vXzSqpB+KCvPwHA=
+		wPkZOnpnbfNUu6Z2GWNLmXWxrOw=
+		</data>
+		<key>Resources/MFHidableCheckbox.nib/keyedobjects.nib</key>
+		<data>
+		yS4KlgMoeNQB7VYl/RDpAgJArmQ=
 		</data>
 		<key>Resources/ReporterTogglerG3-Info.plist</key>
 		<data>
@@ -20,29 +24,56 @@
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
-		<key>Resources/ReporterTogglerG3View.nib</key>
+		<key>Resources/ReporterTogglerG3View.nib/keyedobjects-101300.nib</key>
 		<data>
-		9Njun4wzyPjjw/lLM4/55dVAXfQ=
+		qSm3Vwr7Y86QkaXBp0B322qJLnc=
+		</data>
+		<key>Resources/ReporterTogglerG3View.nib/keyedobjects.nib</key>
+		<data>
+		GN5Ay0GqFN+0elpwMeOiaM84vvE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Resources/Assets.car</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			6fFoV6ugmzDNTy9kCbj/Cpn4alw=
+			</data>
 			<key>hash2</key>
 			<data>
-			Pq+FiRVTF7fW4wTV5iHuB/a0p9gyfSTsBU6cw0F1B8g=
+			6VVoY7YZJZ5TIS5/zenONxlGBFr6lcPZicZoZ3YFbWw=
 			</data>
 		</dict>
-		<key>Resources/MFHidableCheckbox.nib</key>
+		<key>Resources/MFHidableCheckbox.nib/keyedobjects-101300.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			wPkZOnpnbfNUu6Z2GWNLmXWxrOw=
+			</data>
 			<key>hash2</key>
 			<data>
-			2iPMH+INh+ncZ2YVALDi7v9YNCg6MyBEGIhBtRgOPSE=
+			oGPln63VsDNjGtOdm0KRygUPSVrGU+o+9QuxzHPquUQ=
+			</data>
+		</dict>
+		<key>Resources/MFHidableCheckbox.nib/keyedobjects.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yS4KlgMoeNQB7VYl/RDpAgJArmQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			zkFJwbG/oTyOamm4aRyhWxGlJsGbVNUY7cThUGkL5Uw=
 			</data>
 		</dict>
 		<key>Resources/ReporterTogglerG3-Info.plist</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			ZpShXd85WruyHQqAvnU3etxRWXQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			MoLBVGQVGJR4w4uY7/ZDrP/jWdYRB9AarshM+9oyPVg=
@@ -50,16 +81,35 @@
 		</dict>
 		<key>Resources/ReporterTogglerG3-Prefix.pch</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
-		<key>Resources/ReporterTogglerG3View.nib</key>
+		<key>Resources/ReporterTogglerG3View.nib/keyedobjects-101300.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			qSm3Vwr7Y86QkaXBp0B322qJLnc=
+			</data>
 			<key>hash2</key>
 			<data>
-			qW4tI8NCr7pUZCaM11QPbXLVqnX2WN4e2kjF22MUcsQ=
+			B8byAD1kaPSyQdLTHWoKivW7UTiqwnNP9PBG4L9EN1g=
+			</data>
+		</dict>
+		<key>Resources/ReporterTogglerG3View.nib/keyedobjects.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GN5Ay0GqFN+0elpwMeOiaM84vvE=
+			</data>
+			<key>hash2</key>
+			<data>
+			IxdQUg01TM9Nh+Ck/O0fTzPLrUEhMFp9tkxdPYyRu08=
 			</data>
 		</dict>
 	</dict>
