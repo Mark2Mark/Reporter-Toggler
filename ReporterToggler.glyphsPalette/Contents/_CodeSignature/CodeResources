@@ -6,31 +6,27 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<data>
-		6fFoV6ugmzDNTy9kCbj/Cpn4alw=
+		fQ6feXCaMg6JreozJ+NWCMXiFN0=
 		</data>
 		<key>Resources/MFHidableCheckbox.nib/keyedobjects-101300.nib</key>
 		<data>
-		wPkZOnpnbfNUu6Z2GWNLmXWxrOw=
+		cg+QfktVWkrU7nQxAEq4x31iApU=
 		</data>
 		<key>Resources/MFHidableCheckbox.nib/keyedobjects.nib</key>
 		<data>
-		yS4KlgMoeNQB7VYl/RDpAgJArmQ=
+		wgZdGIuYiFvMOcagHPUbOvp1xwA=
 		</data>
-		<key>Resources/ReporterTogglerG3-Info.plist</key>
-		<data>
-		ZpShXd85WruyHQqAvnU3etxRWXQ=
-		</data>
-		<key>Resources/ReporterTogglerG3-Prefix.pch</key>
+		<key>Resources/ReporterToggler-Prefix.pch</key>
 		<data>
 		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
 		</data>
-		<key>Resources/ReporterTogglerG3View.nib/keyedobjects-101300.nib</key>
+		<key>Resources/ReporterTogglerView.nib/keyedobjects-101300.nib</key>
 		<data>
-		qSm3Vwr7Y86QkaXBp0B322qJLnc=
+		ctcRr628N238z5FxpnX9a9/Umgw=
 		</data>
-		<key>Resources/ReporterTogglerG3View.nib/keyedobjects.nib</key>
+		<key>Resources/ReporterTogglerView.nib/keyedobjects.nib</key>
 		<data>
-		GN5Ay0GqFN+0elpwMeOiaM84vvE=
+		g2Z1mew1BiQ4YbzIInxI8nA+1xo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -39,47 +35,36 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6fFoV6ugmzDNTy9kCbj/Cpn4alw=
+			fQ6feXCaMg6JreozJ+NWCMXiFN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			6VVoY7YZJZ5TIS5/zenONxlGBFr6lcPZicZoZ3YFbWw=
+			E257jIYFMD299SXO8RUahXeaR+zdHUZMcpj9Gr9aRj4=
 			</data>
 		</dict>
 		<key>Resources/MFHidableCheckbox.nib/keyedobjects-101300.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wPkZOnpnbfNUu6Z2GWNLmXWxrOw=
+			cg+QfktVWkrU7nQxAEq4x31iApU=
 			</data>
 			<key>hash2</key>
 			<data>
-			oGPln63VsDNjGtOdm0KRygUPSVrGU+o+9QuxzHPquUQ=
+			34mOwmEItdovMfUUUH+TPxhxqZoYbnpqrxmXDowcZa0=
 			</data>
 		</dict>
 		<key>Resources/MFHidableCheckbox.nib/keyedobjects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			yS4KlgMoeNQB7VYl/RDpAgJArmQ=
+			wgZdGIuYiFvMOcagHPUbOvp1xwA=
 			</data>
 			<key>hash2</key>
 			<data>
-			zkFJwbG/oTyOamm4aRyhWxGlJsGbVNUY7cThUGkL5Uw=
+			SlNoMdeQ6MdGDyD3msaOspMi1rM3y6McI35MDky5Esg=
 			</data>
 		</dict>
-		<key>Resources/ReporterTogglerG3-Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZpShXd85WruyHQqAvnU3etxRWXQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			MoLBVGQVGJR4w4uY7/ZDrP/jWdYRB9AarshM+9oyPVg=
-			</data>
-		</dict>
-		<key>Resources/ReporterTogglerG3-Prefix.pch</key>
+		<key>Resources/ReporterToggler-Prefix.pch</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -90,26 +75,26 @@
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
 			</data>
 		</dict>
-		<key>Resources/ReporterTogglerG3View.nib/keyedobjects-101300.nib</key>
+		<key>Resources/ReporterTogglerView.nib/keyedobjects-101300.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qSm3Vwr7Y86QkaXBp0B322qJLnc=
+			ctcRr628N238z5FxpnX9a9/Umgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			B8byAD1kaPSyQdLTHWoKivW7UTiqwnNP9PBG4L9EN1g=
+			z3oSAghc7OYyadhlMCUtLRhDngFxZ/lt4gi2oPA+NJo=
 			</data>
 		</dict>
-		<key>Resources/ReporterTogglerG3View.nib/keyedobjects.nib</key>
+		<key>Resources/ReporterTogglerView.nib/keyedobjects.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GN5Ay0GqFN+0elpwMeOiaM84vvE=
+			g2Z1mew1BiQ4YbzIInxI8nA+1xo=
 			</data>
 			<key>hash2</key>
 			<data>
-			IxdQUg01TM9Nh+Ck/O0fTzPLrUEhMFp9tkxdPYyRu08=
+			6EuCiKQcC2fQTmXKqXorUjneJQTB6zVMG+yn6/Mb32U=
 			</data>
 		</dict>
 	</dict>
