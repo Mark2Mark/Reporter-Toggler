@@ -33,6 +33,10 @@
 	<dict>
 		<key>Resources/Assets.car</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			LGBIe2VWi9A3B2DfVpFnLEYPmiQ=
+			</data>
 			<key>hash2</key>
 			<data>
 			csTtXoC8w9Glgjgu01S8lwFCrwUllaUQAoUMfFC3P0M=
@@ -40,6 +44,10 @@
 		</dict>
 		<key>Resources/MFReporterItemViewController.nib/keyedobjects-101300.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			BlELfNhaKMW1Ztd4Oopvw9NAjxs=
+			</data>
 			<key>hash2</key>
 			<data>
 			hSlk4lXDgqQhQJj3RqWhYfpVFIH2DcjUNIDgR59cup0=
@@ -47,6 +55,10 @@
 		</dict>
 		<key>Resources/MFReporterItemViewController.nib/keyedobjects.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			p6pLUDcXRqJtgF/uJ/gdzPbvXOU=
+			</data>
 			<key>hash2</key>
 			<data>
 			agjVQyTVIIxsKxOdNi/Fh+1klNoFFEI0mSkMjV41YWA=
@@ -54,6 +66,10 @@
 		</dict>
 		<key>Resources/ReporterToggler-Prefix.pch</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
 			<key>hash2</key>
 			<data>
 			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
@@ -61,6 +77,10 @@
 		</dict>
 		<key>Resources/ReporterTogglerView.nib/keyedobjects-101300.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			a3hxrIeeP8yJgkrm3NT2yv9PyEI=
+			</data>
 			<key>hash2</key>
 			<data>
 			qNtfrqxtLChgGvb+Zn8JFb/Yu4hdKMeEcV0Xw2dGpFY=
@@ -68,6 +88,10 @@
 		</dict>
 		<key>Resources/ReporterTogglerView.nib/keyedobjects.nib</key>
 		<dict>
+			<key>hash</key>
+			<data>
+			RIo672a5mCkMThtqWOxXY0OZR7Q=
+			</data>
 			<key>hash2</key>
 			<data>
 			L8b8h6FdHnvUlVnBP9odAFQ1h9K+X/8SQyFTU4esmLE=
